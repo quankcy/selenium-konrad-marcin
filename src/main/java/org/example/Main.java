@@ -18,7 +18,7 @@ public class Main {
         WebDriver driver = new ChromeDriver(chromeOptions);
         driver.get("https://komputronik.pl");
 
-        By.ByCssSelector zgadzamSieNaWszystkie = new By.ByCssSelector("#onetrust-accept-btn-handler");
+        By.ByCssSelector zgadzamSieNaWszystkie = new By.ByCssSelector("#onetrust-accept-btn-handlera");
         driver.findElement(zgadzamSieNaWszystkie).click();
 
         By.ByCssSelector followUpCloseButton = new By.ByCssSelector(".webpush-followup-close");
