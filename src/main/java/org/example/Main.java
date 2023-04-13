@@ -18,16 +18,15 @@ public class Main {
         WebDriver driver = new ChromeDriver(chromeOptions);
         driver.get("https://komputronik.pl");
 
-        By.ByCssSelector zgadzamSieNaWszystkie = new By.ByCssSelector("#onetrust-accept-btn-handlera");
+        By.ByCssSelector zgadzamSieNaWszystkie = new By.ByCssSelector("#onetrust-accept-btn-handler");
         driver.findElement(zgadzamSieNaWszystkie).click();
 
-        By.ByCssSelector followUpCloseButton = new By.ByCssSelector(".webpush-followup-close");
-        driver.findElement(followUpCloseButton).click();
+//        By.ByCssSelector followUpCloseButton = new By.ByCssSelector(".webpush-followup-close");
+//        driver.findElement(followUpCloseButton).click();
 
         By.ByCssSelector wsparcieKomputronikSelector = new By.ByCssSelector("a[href='https://www.komputronik.pl/informacje/uslugi/wsparcie-komputronik/']");
         WebElement wsparcieKomputronik = driver.findElement(wsparcieKomputronikSelector);
         wsparcieKomputronik.click();
-
 
     }
 }
